@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 22 12:19:02 2021
+# Process ID: 22820
+# Current directory: /hdd/jjeonda/AID_backup/evaluation/evaluation/evaluation_AIDistance/hw/download
+# Command line: vivado -mode batch -source vivado_down.tcl
+# Log file: /hdd/jjeonda/AID_backup/evaluation/evaluation/evaluation_AIDistance/hw/download/vivado.log
+# Journal file: /hdd/jjeonda/AID_backup/evaluation/evaluation/evaluation_AIDistance/hw/download/vivado.jou
+#-----------------------------------------------------------
+source vivado_down.tcl
+# if {[info exists env(HOST)] == 0} {
+#      set HOST localhost
+# } else {
+#      set HOST $::env(HOST)
+# }
+# if {[info exists env(PORT)] == 0} {
+#      set PORT 3121
+# } else {
+#      set PORT $::env(PORT)
+# }
+# if {[info exists env(DEVICE)] == 0} {
+#      set DEVICE xc7a200t_0
+# } else {
+#      set DEVICE $::env(DEVICE)
+# }
+# if {[info exists env(BITFILE)] == 0} {
+#      set BITFILE ../bitstream/nexys_video.bit
+# } else {
+#      set BITFILE $::env(BITFILE)
+# }
+# if { [file exists ${BITFILE}] == 0 } {
+#    puts "${BITFILE} not found."
+#    exit
+# }
+# if { [version -short]==2019.2 } {
+#     open_hw_manager
+# } elseif { [version -short]==2018.3 || [version -short]==2018.2 } {
+#     open_hw
+# }
+# connect_hw_server -url ${HOST}:${PORT} -allow_non_jtag
+ERROR: [Common 17-170] Unknown option '-allow_non_jtag', please type 'connect_hw_server -help' for usage info.
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 22 12:19:06 2021...

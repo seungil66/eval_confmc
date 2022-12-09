@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 22 12:20:35 2021
+# Process ID: 22997
+# Current directory: /hdd/jjeonda/AID_backup/evaluation/evaluation/evaluation_AIDistance/hw/download
+# Command line: vivado -mode batch -source vivado_down.tcl
+# Log file: /hdd/jjeonda/AID_backup/evaluation/evaluation/evaluation_AIDistance/hw/download/vivado.log
+# Journal file: /hdd/jjeonda/AID_backup/evaluation/evaluation/evaluation_AIDistance/hw/download/vivado.jou
+#-----------------------------------------------------------
+source vivado_down.tcl

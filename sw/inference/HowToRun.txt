@@ -1,0 +1,27 @@
+## AIDistance (AI적 거리두기) Team SW ReadMe file ##
+
+
+'''
+    $ make 
+
+    # 아래는 현재 Makefile에 정의되어있는 images, ground 임 
+    make run:
+	./$(PROG) --images=test_image_list.txt\
+	          --ground=test_gt_list.txt\
+	          --params=test_param_list.txt\
+	          --evaluation\
+	          --results=results
+
+    run.eval:   
+	./$(PROG) --images=eval_image_list.txt\
+	          --ground=eval_gt_list.txt\
+	          --params=test_param_list.txt\
+	          --evaluation\
+	          --results=results
+
+    $ make run  또는 $ make run.eval 로 동작 가능
+
+    ++ 
+    image list나 ground 를 바꿔줘야하는 경우 Makefile에서 59 번째 line부터 수정하여 다시 $ make 과정부터 진행
+        
+'''

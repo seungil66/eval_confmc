@@ -1,0 +1,61 @@
+Case 1: ==============================
+[Error message]
+"...library/libutils.a not fould..."
+
+[Reasson]
+Library for evaluation is not ready.
+
+[How to deal with it]
+Ask the organization for 'libutils.a'
+
+Case 2: ==============================
+[Error message]
+"CONFMC_HOME is not defined."
+
+[Reasson]
+CON-FMC SW environment is not set.
+
+[How to deal with it]
+  $ source opt/confmc/2020.06/settings.sh
+
+Case 3: ==============================
+[Error message]
+error while loading shared libraries: libbfmaxi.so
+
+[Reasson]
+CON-FMC BFM library cannot be found.
+
+[How to deal with it]
+  $ export LD_LIBRARY_PATH=${CONFMC_HOME}/hwlib/trx_axi/lib/linux_x86_64:${LD_LIBRARY_PATH}
+
+Case 4: ==============================
+[Error message]
+cannot initialize CON-FMC
+
+[Reasson]
+CON-FMC HW is not ready.
+
+[How to deal with it]
+1. Download bitstream.
+2. Press 'BTND' push-button switch and then press 'RESET' push-button switch on the CON-FMC HW.
+3. Check USB device in which USB vendorID/DeviceID should be '04b4:00f3'.
+   $ lsusb
+   ...
+   Bus 002 Device 006: ID 04b4:00f3 Cypress Semiconductor Corp.
+   ...
+
+Case 5: ==============================
+[Error message]
+BfmWrite() something went wrong: 0
+
+[Reasson]
+CON-FMC may be disconnected unexpected.
+
+[How to deal with it]
+1. Press 'RESET' push-button switch on the CON-FMC HW.
+2. When the step 1 dose not solve this problem,
+   turn off the board and start again from begining
+   including FPGA programming.
+
+Have fun.
+2021.03.

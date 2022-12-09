@@ -1,0 +1,45 @@
+
+1. Program FPGA
+   - do not forget to setup Vivado environment.
+   - do not forget to connect JTAG-USB and CON-FMC USB to the host computer.
+   - do not forget to turn on the FPGA board.
+   
+   $ cd hw/download
+   $ make
+
+   - refer to TroubleShooting.txt if anything went wrong.
+
+2. Check CON-FMC USB status
+   - do not forget to press BTND of Nexys Video and RESET of CON-FMC
+     after downloading bit-stream.
+
+   $ lsusb
+   ...
+   Bus 002 Device 006: ID 04b4:00f3 Cypress Semiconductor Corp.
+   ...
+
+4. Run software
+   - refer to TroubleShooting.txt if anything went wrong.
+
+   $ cd sw/inference
+   $ make
+   $ make run
+
+5. Check results
+   - When everyting goes well, followings should be found in 'results' directory.
+   - "predict_results.txt": all inference results in text.
+   - "*_bb.png": image with bounding boxes.
+   - "*_result.txt": inference results in text.
+   - "*.dat": inference results in binary.
+
+     example_test_mask_001_bb.png
+     example_test_mask_001.dat
+     example_test_mask_001_result.txt
+     example_test_mask_002_bb.png
+     example_test_mask_002.dat
+     example_test_mask_002_result.txt
+     ....
+     predict_results.txt
+
+Have fun.
+2021.04.18.

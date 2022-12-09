@@ -1,0 +1,6 @@
+# num=5
+weights  = ../weights/tiny_yolov2_weights.bin
+biases   = ../weights/tiny_yolov2_biases.bin
+scales   = ../weights/tiny_yolov2_scales.bin
+means    = ../weights/tiny_yolov2_rolling_means.bin
+variances= ../weights/tiny_yolov2_rolling_variances.bin
